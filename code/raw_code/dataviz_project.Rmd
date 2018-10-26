@@ -42,6 +42,9 @@ pets <- read.csv("data/raw_data/seattle_pet_licenses.csv", stringsAsFactors = FA
 
 ```{r pet-explore, warning=FALSE} 
 ## Include code here to explore the data 
+df <-pets %>% group_by(primary_breed)
+df
+
 ## and answer the questions in the exercise
 ```
 
